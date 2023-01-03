@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    color: #fefff0;
+    background-color: #001122;
+}
+
+section {
+    height: 800px;
+    width: 100%;
+    display: grid;
+    place-items: center; /*this one places them HORIZONTALLY at the center*/
+    align-content: center; /*this one places them VERTICALLY at the center*/
+}
+
+h1 {
+    font-size: 70px;
+}
+
+#review-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#review-cards h2 {
+    font-size: 35px;
+}
+
+.review-card {
+    width: 23%;
+}
+
+input, button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: inherit;
+    padding-left: 8px;
+    width: 90%;
+}
+
+h2, input, button {
+    font-size: 45px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+section:nth-child(2) {
+    transition-delay: 800ms;
+}
